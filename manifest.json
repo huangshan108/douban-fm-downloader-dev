@@ -1,36 +1,22 @@
 {
-  "name": "豆瓣FM-Hacker",
-  "version": "0.7.0",
-  "description": "嵌入网页版豆瓣FM(douban.fm)页面内,列举出豆瓣FM已播放的歌曲信息,并提供歌曲下载,更有单曲循环,红心歌曲和批量下载脚本等功能",
-  "manifest_version": 2,
-  "permissions": [
-    "tabs","http://dbfmdb.sinaapp.com/*", "http://douban.fm/*","http://music.douban.com/subject/*","http://music.douban.com/musician/*"
-  ],
-  "background": {
-    "scripts": ["jquery.js","background.js"]
-  },
-  "content_security_policy": "script-src 'self' https://dbfmdb.sinaapp.com; object-src 'self'",
-  "icons": { "16": "image/icon16.png",
-           "48": "image/icon48.png",
-          "128": "image/icon128.png" },
-  "web_accessible_resources": [
-    "image/panel-arrow.png",
-    "image/download.png",
-    "image/qrcode.png",
-    "image/gray-heart.gif",
-    "image/red-heart.gif",
-    "image/ban.gif",
-    "image/stop.gif",
-    "image/volume.gif",
-    "image/ico.gif",
-    "image/icon128.png"
-  ],
-  "content_scripts": [
-    {
-      "matches": ["http://douban.fm/*","http://music.douban.com/subject/*","http://music.douban.com/musician/*"],
-      "css":["hacker.css","redhz.css"],
-      "js": ["jquery.js", "js/bootstrap-modal.js", "content_script.js"],
-	  "run_at":"document_end"
-    }
-  ]
+	"manifest_version": 2,
+
+	"name": "Douban FM Downloader",
+	"version": "1.0",
+	"description": "A Google Chrome plug in which allow user to download the song they are currently listening to on Douban FM",
+
+	"browser_action": {
+		"default_title": "Douban FM Downloader"
+	},
+
+	"background": {
+	    "scripts": ["event.js"],
+	    "persistent": false		
+	 },
+
+	 // "permissions": [
+	 "permissions": [
+	 	"activeTab",
+	 	"http://*/"
+	 ]
 }
