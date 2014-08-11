@@ -1,0 +1,302 @@
+#hackerContainer {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 1000;
+	color: #999;
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	font-family: "Courier New";
+}
+#downloadScript {
+	display: block;
+	width: 200px;
+	height: 16px;
+	cursor: pointer;
+	border-style: solid;
+	border-color: #e2e7e3;
+	border-width: 1px;
+	vertical-align: middle;
+	text-align: center;
+	color: #777B7E;
+	background-color: #EBEBED;
+}
+#hackedPlaylist {
+	width: 200px;
+	height: 400px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: white;
+	border-style: solid;
+	border-color: #e2e7e3;
+	border-width: 1px;
+}
+#hackedPanel {
+	width: 200px;
+	height: 16px;
+	cursor: pointer;
+	border-style: solid;
+	border-color: #e2e7e3;
+	border-width: 1px;
+	vertical-align: middle;
+	text-align: center;
+	color: #777B7E;
+	background-color: #EBEBED;
+}
+#imageResources {
+	display: none;
+}
+#songURLQRCodeImage {
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	display: none;
+	position: absolute;
+	z-index: 1001;
+}
+
+#hackedFunction {
+	display: block;
+	width: 200px;
+	height: 24px;
+	line-height:24px;
+	border-style: solid;
+	border-color: #e2e7e3;
+	border-width: 1px;
+	vertical-align: middle;
+	color: #777B7E;
+	background-color: #EBEBED;
+}
+
+#hackedFunction a{
+	margin-left: 5px;
+}
+
+#hackedPlayer {
+	width: 200px;
+	color: #999;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: white;
+	border-style: solid;
+	border-color: #e2e7e3;
+	border-width: 1px;
+}
+#hackedPlayer .clear {
+	clear: both;
+}
+#hackedPlayer #playingSong {
+	width: 136px;
+	height: 32px;
+	line-height: 15px;
+	display: block;
+	float: left;
+	background-color: white;
+}
+#hackedPlayer #playingSong div {
+	width: 100%;
+	display: block;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+}
+#hackedPlayer #playingSong .dashLine {
+	line-height: 2px;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #9fd5c5;
+}
+#hackedPlayer a:link, #hackedPlayer a:visited, #hackedPlayer a:hover, #hackedPlayer a:active {
+	color: #9fd5c5;
+	background-color: rgba(0,0,0,0);
+}
+#hackedPlayer a {
+	text-decoration: none;
+}
+#hackedPlayer img {
+	display: block;
+	float: left;
+}
+#hackedPlayer audio {
+	display: none;
+}
+#hackedPlayer #pauseButton, #hackedPlayer #playButton, #hackedPlayer #nextButton {
+	cursor: pointer;
+}
+#hackedPlayer #pauseButton {
+	display: none;
+}
+#hackedPlaylist .songinfos {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	list-style-type: none;
+}
+#hackedPlaylist .songinfo {
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #9fd5c5;
+}
+#hackedPlaylist .songinfo .clear {
+	clear: both;
+}
+#hackedPlaylist .songinfo .songinfojson {
+	display: none;
+}
+#hackedPlaylist .songinfo .cover {
+	display: block;
+	float: left;
+	width: 65px;
+	height: 65px;
+	overflow: hidden;
+	margin: 5px 0px 5px 5px;
+}
+#hackedPlaylist .songinfo .cover img {
+	width: 65px;
+}
+#hackedPlaylist .songinfo ul {
+	display: block;
+	width: 100px;
+	float: left;
+	padding: 0px;
+	margin: 5px 0px 5px 5px;
+	list-style-type: none;
+}
+#hackedPlaylist .songinfo ul li {
+	line-height: 16px;
+	overflow: hidden;
+}
+#hackedPlaylist .songinfo ul li img {
+	width: 16px;
+	height: 16px;
+	margin: 0px 5px 0px 0px;
+}
+#hackedPlaylist .songinfo ul a:link, #hackedPlaylist .songinfo ul a:visited, #hackedPlaylist .songinfo ul a:hover, #hackedPlaylist .songinfo ul a:active {
+	color: #9fd5c5;
+	background-color: rgba(0,0,0,0);
+}
+#hackedPlaylist .songinfo ul a {
+	text-decoration: none;
+}
+
+#hackerContainer form{
+	background-color: #EBEBED;
+	padding: 0px;
+	margin: 0px;
+	border: 0px solid #999;
+}
+
+#hackerContainer form .input-medium{
+	-webkit-appearance: none;
+	-webkit-background-clip: border-box;
+	-webkit-background-origin: padding-box;
+	-webkit-background-size: auto;
+	-webkit-border-image: none;
+	-webkit-rtl-ordering: logical;
+	-webkit-user-select: text;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: white;
+	background-image: none;
+	background-origin: padding-box;
+	background-size: auto;
+	border-left-color: #EBEBED;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-top-color: #EBEBED;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	cursor: auto;
+	display: block;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 24px;
+	letter-spacing: normal;
+	line-height: 26px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 3px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 0px;
+	text-align: start;
+	text-indent: 0px;
+	text-shadow: none;
+	text-transform: none;
+	vertical-align: middle;
+	width: 140px;
+	word-spacing: 0px;
+}
+
+#hackerContainer form .btn{
+	-webkit-appearance: none;
+	-webkit-background-clip: border-box;
+	-webkit-background-origin: padding-box;
+	-webkit-background-size: auto;
+	-webkit-border-image: none;
+	-webkit-box-align: center;
+	-webkit-rtl-ordering: logical;
+	-webkit-user-select: text;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: transparent;
+	background-image: url(http://img3.douban.com/pics/nav/ui_ns_sbg4.png);
+	background-origin: padding-box;
+	background-position: -60px -100px;
+	background-size: auto;
+	border-bottom-color: #B6C9C1;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-style: none;
+	border-bottom-width: 0px;
+	border-left-color: #B6C9C1;
+	border-left-style: none;
+	border-left-width: 0px;
+	border-right-color: #B6C9C1;
+	border-right-style: none;
+	border-right-width: 0px;
+	border-top-color: #B6C9C1;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-top-style: none;
+	border-top-width: 0px;
+	box-sizing: border-box;
+	color: black;
+	cursor: pointer;
+	display: block;
+	float: right;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 26px;
+	letter-spacing: 3px;
+	line-height: 26px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	padding-right: 0px;
+	padding-top: 1px;
+	text-align: center;
+	text-indent: 0px;
+	text-shadow: none;
+	text-transform: none;
+	white-space: pre;
+	width: 50px;
+	word-spacing: 0px;
+}
