@@ -7,7 +7,7 @@ jQuery("#download").mouseout(function() {
 });
 jQuery(document).ready(function() {
     var script = document.createElement("script");
-script.appendChild(document.createTextNode("window.extStatusHandler = function(a) {var o = jQuery.parseJSON(a);console.log(o.song.url);};"));
+script.appendChild(document.createTextNode("window.extStatusHandler = function(a) {var o = jQuery.parseJSON(a);console.log(o.song.url);jQuery('#download a').attr('href', o.song.url);};"));
 (document.body || document.head || document.documentElement).appendChild(script);
 // alert("Script Enjected Successfully!");
 });
