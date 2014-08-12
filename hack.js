@@ -10,9 +10,3 @@ jQuery(document).ready(function() {
 script.appendChild(document.createTextNode("window.extStatusHandler = function(a) {var o = jQuery.parseJSON(a);console.log(o.song.url);jQuery('#simulate-sec a').attr('href', o.song.url);jQuery('#simulate-sec a').attr('download', o.song.title);};"));
 (document.body || document.head || document.documentElement).appendChild(script);
 });
-
-// jQuery('#download a').attr('href', o.song.url);
-
-// 211.147.4.32 www.douban.com
-// 8.37.234.12 mr3.douban.com
-// 27.195.145.196 mr4.douban.com

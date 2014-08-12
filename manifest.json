@@ -9,12 +9,6 @@
 		"default_title": "Douban FM Downloader"
 	},
 
-	"background": {
-	    "scripts": ["event.js"],
-	    "persistent": false		
-	 },
-
-	 // "permissions": [
 	 "permissions": [
 	 	"activeTab",
 	 	"http://*/"
