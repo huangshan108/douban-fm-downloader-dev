@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 
 	"name": "Douban FM Downloader",
-	"version": "1.0",
+	"version": "1.0.1",
 	"description": "A Google Chrome extension which allows user to download the song which they are currently listening to on Douban FM",
 
 	"browser_action": {
@@ -16,7 +16,7 @@
 
 	 "permissions": [
 	 	"activeTab",
-	 	"http://*/"
+	 	"http://douban.fm/"
 	 ],
 
 	 "content_scripts": [{
