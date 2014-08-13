@@ -7,6 +7,6 @@ jQuery("#download").mouseout(function() {
 });
 jQuery(document).ready(function() {
     var script = document.createElement("script");
-script.appendChild(document.createTextNode("window.extStatusHandler = function(a) {var o = jQuery.parseJSON(a);console.log(o.song.url);jQuery('#simulate-sec a').attr('href', o.song.url);jQuery('#simulate-sec a').attr('download', o.song.title);};"));
+script.appendChild(document.createTextNode("window.extStatusHandler = function(a) {var o = jQuery.parseJSON(a);jQuery('#simulate-sec a').attr('href', o.song.url);jQuery('#simulate-sec a').attr('download', o.song.title);};"));
 (document.body || document.head || document.documentElement).appendChild(script);
 });
