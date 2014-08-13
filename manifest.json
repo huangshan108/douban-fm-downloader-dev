@@ -6,8 +6,13 @@
 	"description": "A Google Chrome extension which allows user to download the song which they are currently listening to on Douban FM",
 
 	"browser_action": {
-		"default_title": "Douban FM Downloader"
+		"default_title": "Douban FM Downloader",
+		"default_icon": "image/icon19.png"
 	},
+
+	"icons": { "16": "image/icon16.png",
+           "48": "image/icon48.png",
+          "128": "image/icon128.png" },
 
 	 "permissions": [
 	 	"activeTab",
